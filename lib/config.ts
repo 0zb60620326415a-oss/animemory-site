@@ -17,7 +17,7 @@ export const SITE = {
   social: {
     // ✏️ Instagram の URL を入れてください
     // 例: 'https://www.instagram.com/animemory_official'
-    instagram: '',
+    instagram: 'https://www.instagram.com/masaki.douga',
 
     // ✏️ Twitter / X の URL を入れてください（不要なら '' のまま）
     // 例: 'https://twitter.com/animemory'
