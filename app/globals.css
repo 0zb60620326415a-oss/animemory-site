@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-cream-50 text-gray-800 font-sans;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+
+  /* フォームリセット */
+  input, textarea, select {
+    @apply appearance-none;
+  }
+}
+
+@layer components {
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━
+     ボタン
+  ━━━━━━━━━━━━━━━━━━━━━━ */
+
+  /* プライマリ：ブランドカラーの柔らかい発光付き */
+  .btn-primary {
+    @apply inline-flex items-center justify-center
+           bg-sakura-500 hover:bg-sakura-600
+           text-white font-sans font-medium text-sm tracking-[0.15em]
+           px-10 py-3.5 rounded-full
+           transition-all duration-300 ease-out
+           shadow-sakura hover:shadow-sakura-lg
+           hover:-translate-y-px;
+  }
+
+  /* セカンダリ：上品な輪郭線 */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center
+           border border-sakura-400 hover:border-sakura-600
+           text-sakura-600 hover:text-sakura-800
+           font-sans font-medium text-sm tracking-[0.15em]
+           px-10 py-3.5 rounded-full
+           transition-all duration-300 ease-out
+           hover:-translate-y-px;
+  }
+
+  /* ホワイト（ダーク背景上） */
+  .btn-white {
+    @apply inline-flex items-center justify-center
+           bg-white hover:bg-cream-50
+           text-sakura-700 hover:text-sakura-800
+           font-sans font-medium text-sm tracking-[0.15em]
+           px-10 py-3.5 rounded-full
+           transition-all duration-300 ease-out
+           shadow-[0_2px_16px_rgba(0,0,0,0.12)]
+           hover:shadow-[0_4px_24px_rgba(0,0,0,0.16)]
+           hover:-translate-y-px;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━
+     レイアウト
+  ━━━━━━━━━━━━━━━━━━━━━━ */
+
+  /* コンテンツ幅：デスクトップで広げすぎない */
+  .section-wrapper {
+    @apply w-full max-w-wide mx-auto px-5 md:px-10;
+  }
+
+  .content-wrapper {
+    @apply w-full max-w-content mx-auto px-5 md:px-8;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━
+     カード
+  ━━━━━━━━━━━━━━━━━━━━━━ */
+
+  .card {
+    @apply bg-white rounded-2xl border border-cream-200
+           shadow-card hover:shadow-card-hover
+           transition-shadow duration-300;
+  }
+
+  .card-flat {
+    @apply bg-white rounded-2xl border border-cream-200;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━
+     フォーム
+  ━━━━━━━━━━━━━━━━━━━━━━ */
+
+  .form-input {
+    @apply w-full bg-cream-50 border border-cream-200
+           rounded-xl px-5 py-3.5
+           font-sans text-sm text-gray-800 placeholder-gray-300
+           focus:outline-none focus:bg-white
+           focus:border-sakura-300 focus:ring-4 focus:ring-sakura-50
+           transition-all duration-200;
+  }
+
+  .form-label {
+    @apply block font-sans text-xs text-gray-500 mb-2 tracking-wide;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━
+     装飾
+  ━━━━━━━━━━━━━━━━━━━━━━ */
+
+  /* テキストのオーバーレイ用グラデーション */
+  .hero-gradient {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.30) 0%,
+      rgba(0,0,0,0.25) 40%,
+      rgba(0,0,0,0.55) 100%
+    );
+  }
+
+  /* セクション区切り（背景色違い）に使う極細ボーダー */
+  .section-border-top {
+    @apply border-t border-cream-200;
+  }
+}
+
+@keyframes scrollDown {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@layer utilities {
+  /* 文字 */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* ヒーロースクロールインジケーター */
+  .animate-scroll-down {
+    animation: scrollDown 2s ease-in-out infinite;
+  }
+
+  /* スクロールアニメーション用（JS と組み合わせ） */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

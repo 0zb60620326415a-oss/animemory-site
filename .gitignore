@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Build
+dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Debug
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Adobe Premiere / 編集素材（サイトに不要なファイル）
+Adobe Premiere Pro Audio Previews/
+Adobe Premiere Pro Auto-Save/
+サンプル動画/
+サンプル用素材/
+*.prproj
+*.prin
+
+# BGM原本（public/以外）
+promised_garden.mp3
+
+# TypeScript
+tsconfig.tsbuildinfo
