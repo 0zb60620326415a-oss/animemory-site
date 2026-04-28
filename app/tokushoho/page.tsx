@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 const items: { label: string; value: string }[] = [
   { label: '販売業者',         value: 'AniMemory（アニメモリー）' },
   { label: '運営責任者',       value: '福田 昌希' },
-  { label: '所在地',           value: '〒 お問い合わせいただいた際にお伝えします' },
-  { label: '電話番号',         value: 'お問い合わせいただいた際にお伝えします' },
+  { label: '所在地',           value: '広島県三次市和知町1116-2' },
+  { label: '電話番号',         value: '080-6325-1865' },
   { label: 'メールアドレス',   value: 'お問い合わせフォームよりご連絡ください' },
   { label: 'サービス内容',     value: 'アニメ風記念ムービーの制作・納品' },
   { label: '販売価格',         value: '各プランページをご確認ください（税込表示）' },
