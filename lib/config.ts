@@ -11,7 +11,7 @@ export const SITE = {
   description: '大切な思い出をアニメ風の記念ムービーとして残すサービス',
 
   // ✏️ 公開後に実際のドメインへ変更（Vercel の場合は自動割り当てURLでもOK）
-  url: 'https://animemory.vercel.app',
+  url: 'https://animemory-site.vercel.app',
 
   // ── SNS リンク ────────────────────────────────────────────────
   social: {

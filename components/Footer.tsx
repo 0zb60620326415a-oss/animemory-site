@@ -113,9 +113,8 @@ export default function Footer() {
             © {year} {SITE.name}. All rights reserved.
           </p>
           <div className="flex gap-5">
-            {/* ✏️ プライバシーポリシー・特定商取引法ページを作成後にリンクを追加 */}
-            <span className="font-sans text-2xs text-gray-800">プライバシーポリシー</span>
-            <span className="font-sans text-2xs text-gray-800">特定商取引法</span>
+            <a href="/privacy" className="font-sans text-2xs text-gray-600 hover:text-sakura-400 transition-colors">プライバシーポリシー</a>
+            <a href="/tokushoho" className="font-sans text-2xs text-gray-600 hover:text-sakura-400 transition-colors">特定商取引法</a>
           </div>
         </div>
       </div>

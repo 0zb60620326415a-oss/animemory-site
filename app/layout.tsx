@@ -74,21 +74,19 @@ export const metadata: Metadata = {
     siteName:    SITE.name,
     locale:      'ja_JP',
     type:        'website',
-    // ✏️ OGP画像を用意したらコメントを外してください
-    // images: [{
-    //   url:    '/ogp.jpg',   // public/ogp.jpg を配置
-    //   width:  1200,
-    //   height: 630,
-    //   alt:    `${SITE.name} - 思い出をアニメ風記念ムービーに`,
-    // }],
+    images: [{
+      url:    '/ogp.jpg',
+      width:  1200,
+      height: 630,
+      alt:    `${SITE.name} - 思い出をアニメ風記念ムービーに`,
+    }],
   },
 
   twitter: {
     card:        'summary_large_image',
     title:       `${SITE.name}（${SITE.nameJa}）｜思い出をアニメ風記念ムービーに`,
     description: '写真・動画をアニメ風に加工し、大切な思い出を特別なムービーに仕上げるサービスです。',
-    // ✏️ OGP画像を用意したらコメントを外してください
-    // images: ['/ogp.jpg'],
+    images: ['/ogp.jpg'],
   },
 
   // Vercel / Google Search Console の確認用（取得後に追加）
