@@ -89,10 +89,9 @@ export const metadata: Metadata = {
     images: ['/ogp.jpg'],
   },
 
-  // Vercel / Google Search Console の確認用（取得後に追加）
-  // verification: {
-  //   google: 'XXXXXXXXXX', // Google Search Console の確認コード
-  // },
+  verification: {
+    google: 'Yv_xgcVNeXlJWgP8cL0_WIqzVIXEk1bXp0a1nfvFSM0',
+  },
 }
 
 export default function RootLayout({
