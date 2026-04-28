@@ -154,8 +154,49 @@ export default function PricingSection() {
           ))}
         </div>
 
+        {/* ━━━ 追加オプション ━━━ */}
+        <div className="mt-6 bg-white rounded-2xl border border-cream-200 overflow-hidden">
+          <div className="px-7 py-4 border-b border-cream-100 flex items-center gap-3">
+            <span className="font-display text-2xs text-sakura-400 tracking-[0.35em] uppercase">Add-on Option</span>
+            <span className="w-px h-3 bg-cream-200" />
+            <span className="font-sans text-xs text-gray-400">追加オプション</span>
+          </div>
+          <div className="px-7 py-6 flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
+            <div className="flex items-start gap-4">
+              {/* DVDアイコン */}
+              <div className="w-10 h-10 rounded-full bg-cream-50 border border-cream-200 flex items-center justify-center flex-shrink-0">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-5 h-5 text-sakura-400">
+                  <circle cx="12" cy="12" r="9" />
+                  <circle cx="12" cy="12" r="2.5" />
+                  <path d="M12 9.5V7M14.5 12H17M12 14.5V17M9.5 12H7" strokeLinecap="round" />
+                </svg>
+              </div>
+              <div>
+                <p className="font-serif text-sm font-medium text-gray-700 mb-1">DVD納品オプション</p>
+                <p className="font-sans text-xs text-gray-500 leading-[1.8]">
+                  ジャケット印刷・ケース付きでお手元にお届けします。<br />
+                  結婚式・上映会など、プレゼントにも最適です。
+                </p>
+                <div className="flex flex-wrap gap-2 mt-2.5">
+                  {['ジャケット印刷付き', 'ケース付き', '送料込み'].map((tag) => (
+                    <span key={tag} className="font-sans text-2xs text-gray-500 border border-cream-200 bg-cream-50 px-2.5 py-1 rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="sm:text-right flex-shrink-0">
+              <p className="font-display text-2xl text-sakura-600 leading-none mb-1">
+                ¥5,500<span className="font-sans text-xs text-gray-400 ml-1">税込 / 1枚</span>
+              </p>
+              <p className="font-sans text-xs text-gray-400">2枚目以降 <span className="text-sakura-500 font-medium">+¥1,000</span> / 枚</p>
+            </div>
+          </div>
+        </div>
+
         {/* 下部補足 */}
-        <div className="mt-8 bg-white rounded-2xl border border-cream-200 p-7 text-center">
+        <div className="mt-6 bg-white rounded-2xl border border-cream-200 p-7 text-center">
           <p className="font-sans text-sm text-gray-600 leading-[2] mb-5">
             ご用途や写真枚数、動画素材の内容に応じて最適なプランをご提案します。
             <br />
