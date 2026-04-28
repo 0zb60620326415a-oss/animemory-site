@@ -279,13 +279,12 @@ export default function ContactSection() {
             {/* Instagram DM 案内 */}
             <p className="text-center font-sans text-xs text-gray-400 pt-1 leading-[2]">
               InstagramのDMからのご相談も可能です。
-              {/* ✏️ SITE.social.instagram に URL を設定後、コメントを外してください */}
-              {/* {SITE.social.instagram && (
+              {SITE.social.instagram && (
                 <a href={SITE.social.instagram} target="_blank" rel="noopener noreferrer"
                    className="text-sakura-500 underline underline-offset-2 ml-1">
                   こちらから
                 </a>
-              )} */}
+              )}
             </p>
           </form>
         )}
