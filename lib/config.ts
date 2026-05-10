@@ -25,7 +25,7 @@ export const SITE = {
 
     // ✏️ LINE 公式アカウントの URL を入れてください（不要なら '' のまま）
     // 例: 'https://lin.ee/XXXXXXXX'
-    line: '',
+    line: 'https://line.me/R/ti/p/@187tyqrj',
   },
 
   // ── お問い合わせフォーム ──────────────────────────────────────

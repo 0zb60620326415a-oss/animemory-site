@@ -259,8 +259,8 @@ export default function ContactSection() {
               {sending ? '送信中...' : '送信する'}
             </button>
 
-            {/* ── LINE 誘導（SITE.social.line を設定したらコメントを外す） ── */}
-            {/* {SITE.social.line && (
+            {/* ── LINE 誘導 ── */}
+            {SITE.social.line && (
               <div className="text-center pt-2">
                 <p className="font-sans text-xs text-gray-400 mb-3">または</p>
                 <a
@@ -274,7 +274,7 @@ export default function ContactSection() {
                   LINE でも相談できます
                 </a>
               </div>
-            )} */}
+            )}
 
             {/* Instagram DM 案内 */}
             <p className="text-center font-sans text-xs text-gray-400 pt-1 leading-[2]">
