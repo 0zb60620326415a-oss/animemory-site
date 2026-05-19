@@ -277,15 +277,21 @@ export default function ContactSection() {
             )}
 
             {/* Instagram DM 案内 */}
-            <p className="text-center font-sans text-xs text-gray-400 pt-1 leading-[2]">
-              InstagramのDMからのご相談も可能です。
-              {SITE.social.instagram && (
-                <a href={SITE.social.instagram} target="_blank" rel="noopener noreferrer"
-                   className="text-sakura-500 underline underline-offset-2 ml-1">
-                  こちらから
+            {SITE.social.instagram && (
+              <div className="text-center pt-2">
+                <p className="font-sans text-xs text-gray-400 mb-3">または</p>
+                <a
+                  href={SITE.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-sans text-sm text-pink-700
+                             border border-pink-300 bg-pink-50 hover:bg-pink-100
+                             px-6 py-3 rounded-full transition-colors duration-200"
+                >
+                  Instagram DM でも相談できます
                 </a>
-              )}
-            </p>
+              </div>
+            )}
           </form>
         )}
       </div>
