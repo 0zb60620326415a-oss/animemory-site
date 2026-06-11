@@ -74,7 +74,7 @@ export default function MonitorSection() {
           {/* CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#contact" className="btn-white">
-              モニターについて問い合わせる
+              無料で相談してみる
             </a>
             <a
               href="#samples"

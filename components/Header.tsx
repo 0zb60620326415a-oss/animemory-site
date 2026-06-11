@@ -83,7 +83,7 @@ export default function Header() {
                 : 'bg-white/15 hover:bg-white/25 text-white border border-white/30'}
             `}
           >
-            お問い合わせ
+            無料で相談してみる
           </a>
         </div>
 
@@ -132,7 +132,7 @@ export default function Header() {
               モニター応募
             </a>
             <a href="#contact" onClick={() => setMenuOpen(false)} className="btn-primary text-center text-sm py-3">
-              お問い合わせ
+              無料で相談してみる
             </a>
           </div>
         </div>

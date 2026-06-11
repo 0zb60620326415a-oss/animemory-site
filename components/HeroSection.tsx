@@ -101,7 +101,7 @@ export default function HeroSection() {
             モニター募集を見る
           </a>
           <a href="#contact" className="btn-white">
-            お問い合わせ
+            無料で相談してみる
           </a>
         </div>
 
